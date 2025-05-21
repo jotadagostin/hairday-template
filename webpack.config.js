@@ -19,6 +19,9 @@ module.exports = {
     port: 3000,
     open: true,
     liveReload: true,
+    proxy: {
+      "/schedules": "http://localhost:3000",
+    },
   },
 
   plugins: [
@@ -44,6 +47,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+
         use: {
           loader: "babel-loader",
           options: {
