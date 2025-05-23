@@ -3,7 +3,7 @@
   "description": "Aplicacao web para agendamentos para corte de corte de cabelo",
   "author": "Joao Paulo Dagostin",
   "scripts": {
-    "server": "json-server --watch server.json --port 3000",
+    "server": "json-server --watch server.json --port 3333",
     "build": "webpack",
     "dev": "webpack serve"
   },

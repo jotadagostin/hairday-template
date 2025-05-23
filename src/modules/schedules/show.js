@@ -5,7 +5,7 @@ const periodMorning = document.getElementById("period-morning");
 const periodAfternoon = document.getElementById("period-afternoon");
 const periodNight = document.getElementById("period-night");
 
-export function schedulesShow({ dailySchedules }) {
+export function scheduleShow({ dailySchedules }) {
   try {
     //limpa as listas:
     periodMorning.innerHTML = "";
@@ -37,7 +37,7 @@ export function schedulesShow({ dailySchedules }) {
 
       //Renderiza o agendamento na sessao (manha, tare ou noite):
       if (hour <= 12) {
-        periodAfternoon.appendChild(item);
+        periodMorning.appendChild(item);
       } else if (hour > 12 && hour <= 18) {
         periodAfternoon.appendChild(item);
       } else {
