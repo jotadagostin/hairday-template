@@ -1,5 +1,5 @@
 import { schedulesDay } from "./load.js";
-// import { scheduleCancel } from "../../services/schedule-cancel.js";
+import { scheduleCancel } from "../../services/schedule-cancel.js";
 const periods = document.querySelectorAll(".period");
 
 //gerar evento de lista para cada lista (manha, tarde e noite):
@@ -21,7 +21,7 @@ periods.forEach((period) => {
 
         if (isConfirm) {
           //Faz a requisicao na API para cancelar:
-          // await scheduleCancel({ id });
+          await scheduleCancel({ id });
 
           //recarrega os agendamentos:
           schedulesDay();
