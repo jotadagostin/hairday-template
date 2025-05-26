@@ -1,5 +1,5 @@
 import { schedulesDay } from "./load.js";
-import { scheduleCancel } from "../../services/schedule-cancel.js";
+import { scheduleCancel } from "./schedule-cancel.js";
 const periods = document.querySelectorAll(".period");
 
 //gerar evento de lista para cada lista (manha, tarde e noite):
